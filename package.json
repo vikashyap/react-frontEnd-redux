@@ -1,0 +1,68 @@
+{
+  "name": "frontend_interview_test",
+  "version": "1.0.0",
+  "description": "An interview test for Front-End Development job candidates",
+  "main": "index.jsx",
+  "repository": "git@github.com:OskHa/frontend_interview_test.git",
+  "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
+  "license": "MIT",
+  "scripts": {
+    "jest": "jest --watch",
+    "serve": "webpack-dev-server --hot --inline",
+    "lint": "eslint ./src"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "./test/enzyme/setup.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "html-webpack-plugin": "^2.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.0.3",
+    "jest-cli": "^22.0.3",
+    "jsdom": "^11.5.1",
+    "precommit-hook": "^3.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "^1.0.17",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3",
+    "underscore": "^1.8.3",
+    "webpack-sass-loaders": "^1.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}

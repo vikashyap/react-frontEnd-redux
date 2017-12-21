@@ -1,0 +1,24 @@
+[{
+  "title": "",
+  "advertisementAssets": {
+    "0": {
+      "advertisementThumbnails": {
+        "inventory_m": {
+          "url": ""
+        }
+      }
+    }
+  },
+  "advertisementPrice": {
+    "baseRent": "",
+    "sellPrice": ""
+  },
+  "purpose": 0,
+  "realestateSummary": {
+    "address": {
+      "postalCode": "",
+      "city": ""
+    },
+    "space": 20
+  }
+}]
