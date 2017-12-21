@@ -11,7 +11,6 @@ export function serviceCall(requestData) {
         };
         request.headers['Content-Type'] = 'application/json';
         axios(request).then(resolve).catch(function(error) {
-            console.warn('Server response error: ', error);
             reject(error.response ? error.response : error);
         });
     });
