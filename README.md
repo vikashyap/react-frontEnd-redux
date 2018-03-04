@@ -2,7 +2,7 @@
 
 
 
-## A Given app created in React and Redux Library.
+## App created in React and Redux Library.
 
 
 ### 1.Redux is a predictable state container for JavaScript apps.`
@@ -40,16 +40,3 @@ Visit : https://nodejs.org/en/download/
   `npm run serve` --- to run project
   `npm run jest`  --- to run test cases
 
-
-
-
-## Check Points
-* Consumed public API @ https://api.mcmakler.de/v1/advertisements to retrieve
-  a list of advertisements of vacant apartments,but not able to find api filters for example. Didn't get any information about meta data which includes page, pageSize and count. Thats why when i am hitting the given api,
-  I am getting whole 700 results in my request.Though i am getting whole data, so i thought to implement client side pagination in my App, bit extra work for me but i wanted to be justify with whole data.
-
-
-* Test cases are written in Jest suit and Enzymes, which are most prefarable 
-  suit with React Applications.
-* I tried to implement Git hooks but not able push .git folder in repo, for
-  now i used npm pre-commit hook which checks linting before any git commit.
