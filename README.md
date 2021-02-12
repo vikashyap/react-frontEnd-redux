@@ -2,7 +2,7 @@
 
 
 
-## App created in React and Redux Library.
+## App created in React and Redux Librarys.
 
 
 ### 1.Redux is a predictable state container for JavaScript apps.`
